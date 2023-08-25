@@ -9,7 +9,9 @@ export default async function Home() {
   const news: NewsResponse = response || (await fetchNews(categories.join(',')))
   // console.log(news)
   return (
+    <>
       <NewsList news={news}/>
+    </>
   )
 }
 

@@ -2,6 +2,7 @@ import { Bars3Icon } from "@heroicons/react/20/solid"
 import Link from "next/link"
 import Navlinks from "./Navlinks"
 import SearchBox from "./SearchBox"
+import DarkmodeButton from "./DarkmodeButton"
 
 
 const Header = () => {
@@ -17,6 +18,9 @@ const Header = () => {
             </Link>
             <div className="flex items-center justify-end space-x-2">
                 {/* DarkMode Button */}
+                <DarkmodeButton />
+
+
                 <button className="hidden md:inline bg-slate-900 text-white px-4 lg:px-8 py-2 lg:py-4 rounded-full dark:bg-slate-800">
                     Subscribe Now!
                 </button>
