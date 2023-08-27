@@ -6,7 +6,7 @@ import response from '../../response.json'
 export default async function Home() {
 
   // fetch the news data
-  const news: NewsResponse = response || (await fetchNews(categories.join(',')))
+  const news: NewsResponse = (await fetchNews(categories.join(',')))  || response
   // console.log(news)
   return (
     <>
